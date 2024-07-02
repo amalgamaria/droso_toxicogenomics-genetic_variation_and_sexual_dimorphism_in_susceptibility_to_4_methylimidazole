@@ -23,14 +23,14 @@ tail(data)
 
 ls(data)
 data$Sex
-data %>% select(sex, concentration)
+data %>% select(Sex, Concentration)
 femaledata <- data %>%
-  filter(sex == "F") %>%
-  select(sex, concentration, mean, sterror)
+  filter(Sex == "F") %>%
+  select(Sex, Concentration, Mean, StError)
 print(femaledata)
 maledata <- data %>%
-  filter(sex == "M") %>%
-  select(sex, concentration, mean, sterror)
+  filter(Sex == "M") %>%
+  select(Sex, Concentration, Mean, StError)
 print(maledata)
 
 wrapper <- function(x, ...)
@@ -42,14 +42,14 @@ wrapper <- function(x, ...)
 
 library(ggplot2)
 p1 <- ggplot() +
-  geom_line(data = femaledata, aes(x = concentration, y = mean, color = sex), size=0.5) +
-  geom_errorbar(data = femaledata, aes(x = concentration, ymin=mean-sterror, ymax=mean+sterror, color = sex), width=1.0, linewidth=0.35,
+  geom_line(data = femaledata, aes(x = Concentration, y = Mean, color = Sex), size=0.5) +
+  geom_errorbar(data = femaledata, aes(x = Concentration, ymin=Mean-StError, ymax=Mean+StError, color = Sex), width=1.0, linewidth=0.35,
                 position=position_dodge(0.1)) +
-  geom_point(data= femaledata, aes(x = concentration, y = mean, color = sex), size = 1.0) +
-  geom_line(data = maledata, aes(x = concentration, y = mean, color = sex), size=0.5) +
-  geom_errorbar(data = maledata, aes(x = concentration, ymin=mean-sterror, ymax=mean+sterror, color = sex), width=1.0, linewidth=0.35,
+  geom_point(data= femaledata, aes(x = Concentration, y = Mean, color = Sex), size = 1.0) +
+  geom_line(data = maledata, aes(x = Concentration, y = Mean, color = Sex), size=0.5) +
+  geom_errorbar(data = maledata, aes(x = Concentration, ymin=Mean-StError, ymax=Mean+StError, color = Sex), width=1.0, linewidth=0.35,
                 position=position_dodge(0.1)) +
-  geom_point(data=maledata, aes(x = concentration, y = mean, color = sex), size = 1.0) +
+  geom_point(data=maledata, aes(x = Concentration, y = Mean, color = Sex), size = 1.0) +
   scale_color_manual(values = c("F" = "orange", "M" = "purple"), name = "Sex") +
   scale_x_continuous("Concentration of 4-methylimidazole (mM)", limits=c(3,61), breaks = c(0, 10, 20, 30, 40, 50, 60), expand = c(0,2.0)) +
   scale_y_continuous(limits = c(0,1.0), expand = c(0,0.015)) +
