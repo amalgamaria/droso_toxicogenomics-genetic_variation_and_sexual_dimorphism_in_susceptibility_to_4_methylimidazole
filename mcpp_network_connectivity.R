@@ -10,8 +10,7 @@
 #To run in RStudio, replace "database_file", "observed_list", and "n_permutations" in the main function with paths to your inputs and the number of permutations you will run.
 # You will also need to comment out lines 69, 83, and 86-93 if running in RStudio.
 
-# Install and load igraph
-install.packages("igraph")
+# Make sure igraph and all dependencies are installed in your environment. Load igraph.
 library(igraph)
 
 # This is the function that calculates the degree of connectivity (connectivity index)
