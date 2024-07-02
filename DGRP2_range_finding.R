@@ -14,10 +14,10 @@ library(gtable)
 
 #Read in data. Please update the file path as needed.
 
-data <- read.csv("/Users/Katelynne/Desktop/updated_codes/DGRP2/dgrp2_alternate_code/dgrp2_fem_15.csv")
-data2 <- read.csv("/Users/Katelynne/Desktop/updated_codes/DGRP2/dgrp2_alternate_code/dgrp2_fem_30.csv")
-data3 <- read.csv("/Users/Katelynne/Desktop/updated_codes/DGRP2/dgrp2_alternate_code/dgrp2_male_15.csv")
-data4 <- read.csv("/Users/Katelynne/Desktop/updated_codes/DGRP2/dgrp2_alternate_code/dgrp2_male_30.csv")
+data = read.csv("/path/to/working/file.csv")
+data2 = read.csv("/path/to/working/file.csv")
+data3 = read.csv("/path/to/working/file.csv")
+data4 = read.csv("/path/to/working/file.csv")
 
 #Set the factor levels for the Line column.
 #This is based on the 14 DGRP2 lines tested.
