@@ -18,9 +18,6 @@ DGRP3_cumulative_separate_sex_graph.R
 Reaction_norm_graph.R
 - R code for the reaction norm graph using the DGRP3 data
 
-database_connections.txt
-- Database file needed to run "mccp_network_connectivity.R"
-
 mcpp_network_connectivity.R
 - Make sure the R package igraph is installed and usable before running if not running in RStudio
 - Run in a new directory and on R version 4.1.2 with the following command: 
