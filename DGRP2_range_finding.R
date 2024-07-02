@@ -33,10 +33,10 @@ data4$Line <- factor(data4$Line, levels = lines_order)
 #A graph will be made for each concentration and sex combination.
 
 create_plot <- function(data, title) {
-  ggplot(data, aes(x = exposure, y = Mean, color = Line)) +
+  ggplot(data, aes(x = Exposure, y = Mean, color = Line)) +
     geom_point(size = 1.0) +
     geom_line(linewidth = 0.25) +
-    geom_errorbar(aes(x = exposure, ymin = Mean - StError, ymax = Mean + StError), width = 0.8, linewidth = 0.2) +
+    geom_errorbar(aes(x = Exposure, ymin = Mean - StError, ymax = Mean + StError), width = 0.8, linewidth = 0.2) +
     labs(x = "Exposure (hours)", y = "Mean survival proportion", title = title, color = "DGRP2 line") +
     scale_x_continuous("Exposure (hours)", breaks = c(0, 24)) +
     scale_y_continuous(limits = c(0, 1.0)) +
