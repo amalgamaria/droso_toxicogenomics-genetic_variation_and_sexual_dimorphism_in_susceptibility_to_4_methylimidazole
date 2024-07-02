@@ -24,3 +24,6 @@ CSB_doseresponse_data.csv
 - This file contains four headers: Sex, Concentration, Mean, and StError
 - Female CSB flies were tested on four concentrations
 - Male CSB flies were tested on eight concentrations
+
+database_connections.txt
+- Database file needed to run "mccp_network_connectivity.R"
