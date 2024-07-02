@@ -11,7 +11,7 @@ library(ggplot2)
 
 #Read in data. Please update the file path as needed.
 
-data = read.csv("/Users/Katelynne/Desktop/updated_codes/DGRP3/4methyl_204_newse.csv")
+data = read.csv("/path/to/working/file.csv")
 
 #Check that the data has imported correctly.
 
