@@ -2,7 +2,7 @@
 
 DGRP3_204_4methyl.csv
 - This file contains four headers: Line, Sex, Mean, and StError
-- This file is for male and femae DGRP3 flies tested on their respective concentrations (15 mM for males and 30 mM for females).
+- This file is for male and female DGRP3 flies tested on their respective concentrations (15 mM for males and 30 mM for females).
 
 DGRP2_female_15.csv
 - This file contains six headers: Line, Sex, Mean, StError, Concentration, and Exposure
