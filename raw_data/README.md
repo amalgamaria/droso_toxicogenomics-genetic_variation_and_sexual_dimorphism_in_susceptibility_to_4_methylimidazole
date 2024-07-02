@@ -1,4 +1,4 @@
-# Raw data files contained in this folder
+# Input data files contained in this folder
 
 DGRP3_204_4methyl.csv
 - This file contains four headers: Line, Sex, Mean, and StError
