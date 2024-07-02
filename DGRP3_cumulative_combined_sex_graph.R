@@ -13,7 +13,7 @@ library(gridExtra)
 
 #Read in data. Please update the file path as needed.
 
-data = read.csv("/Users/Katelynne/Desktop/updated_codes/DGRP3/4methyl_204_newse.csv")
+data = read.csv("/path/to/working/file.csv")
 
 #The following code will separate the male and female data into two different data sets.
 #Use print to check that the data has separated correctly.
